@@ -1,0 +1,5 @@
+# install.packages("webshot")
+library(webshot)
+# install_phantomjs()
+file_name <- paste0("file://", normalizePath("qcbs.html"))
+webshot(file_name, "qcbs.pdf")
